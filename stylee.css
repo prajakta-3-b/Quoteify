@@ -1,0 +1,62 @@
+body {
+    background: linear-gradient(270deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+    background-size: 800% 800%;
+    animation: gradientBG 15s ease infinite;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Smooth animated gradient */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    text-align: center;
+    color: white;
+}
+
+.quote-box {
+    background: #ffffff; /* Solid white background */
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    margin: auto;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: black; /* Black text inside */
+}
+
+#quote {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: black; /* Black quote text */
+}
+
+#author {
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #444; /* Dark grey for author */
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background: #ffcc00;
+    color: #333;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    background: #ffaa00;
+    transform: scale(1.05);
+}
